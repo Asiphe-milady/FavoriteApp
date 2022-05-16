@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:favoriteApp"
+             x:Class="favoriteApp.MainPage" NavigationPage.HasNavigationBar="True" BackgroundColor="Black">
+
+    <StackLayout>
+        <Label Text="Showmax" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="15"/>
+
+        <SearchBar Placeholder="Search new movies.."
+                   CancelButtonColor="AntiqueWhite"
+                   PlaceholderColor="DeepPink"
+                   TextColor="DeepPink"
+                   HorizontalTextAlignment="Start" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Image Source="https://i2.wp.com/themediaonline.co.za/wp-content/uploads/2021/02/e4416461-the-real-housewives-of-durban-s1_catch-up-poster.jpg" HorizontalOptions="Fill" Aspect="AspectFill"></Image>
+        </Grid>
+
+        <Label Text="Recommended for you!" TextColor="DeepPink" FontSize="Subtitle"
+                           FontAttributes="Italic" Margin="0"
+                           VerticalOptions="StartAndExpand"/>
+        <StackLayout>
+            <ScrollView VerticalOptions="FillAndExpand" 
+                        HeightRequest="300">
+
+                <Grid>
+                    <StackLayout  BackgroundColor="Black">
+                        <Image Source="https://i.ytimg.com/vi/I-6Nr9B362g/maxresdefault.jpg" Aspect="AspectFill" HorizontalOptions="EndAndExpand" 
+                           HeightRequest="300" Opacity="0.6" Margin="0,0,0,10"></Image>
+
+                        <StackLayout Margin="15,25,10,10">
+                            <Button Text="Watch Now!" BackgroundColor="DeepPink" HeightRequest="50"/>
+                        </StackLayout>
+
+
+                        <StackLayout BackgroundColor="Black">
+                            <Image Source="https://showmax.akamaized.net/i/8a4dc564-c451-4cb1-a822-da0a8cc75a2f/overlay=eyJpbWFnZSI6ICIyZjY2MWFiMy03N2JjLTQ2ZTgtOTlhZi1lY2EzZTM1ODVlZTkiLCAicG9zaXRpb24iOiAzLCAic2F0dXJhdGlvbiI6IDEwMCwgInNjYWxlIjogMzMsICJvcGFjaXR5IjogMTAwLCAidiI6IDF9/400x" Aspect="AspectFill" HeightRequest="300" Opacity="0.6"
+                                   Margin="10,0"></Image>
+
+                            <StackLayout Margin="15,25,10,10">
+                                <Button Text="Watch Now!" BackgroundColor="Pink" HeightRequest="50"/>
+                            </StackLayout>
+                    
+
+                            <StackLayout BackgroundColor="Black">
+                                <Image Source="https://showmax.akamaized.net/i/d75c26b6-394d-4fb2-973e-71f32481a93f/400x" Aspect="AspectFill" HeightRequest="200"
+                                Opacity="0.6" Margin="20"></Image>
+
+                                <StackLayout Margin="15,25,10,10">
+                                    <Button Text="Watch Now!" BackgroundColor="HotPink" HeightRequest="50"/>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </StackLayout>
+
+                     
+                    </StackLayout>    
+                </Grid>
+                     
+
+            </ScrollView>
+        </StackLayout>
+        
+        
+        <StackLayout Margin="20,35,20,20">
+            <Button Text="+Watchlist" BackgroundColor="DeepPink"/>
+        </StackLayout>
+
+    </StackLayout>
+  </ContentPage>       
+                     
+                      
+
+
